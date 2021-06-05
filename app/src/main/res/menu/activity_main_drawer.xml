@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Profile" />
+        <item
+            android:id="@+id/event"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Events" />
+        <item
+            android:id="@+id/about"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="About Us" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/ic_partial_secure"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/recharge"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Recharge" />
+            <item
+                android:id="@+id/message"
+                android:icon="@android:drawable/stat_notify_chat"
+                android:title="Message" />
+            <item
+                android:id="@+id/payement"
+                android:icon="@android:drawable/stat_notify_more"
+                android:title="Payement" />
+        </menu>
+    </item>
+
+</menu>

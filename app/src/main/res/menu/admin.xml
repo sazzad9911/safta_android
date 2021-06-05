@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="Reset Meal Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="Reset Home Data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:title="Meal Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings4"
+        android:orderInCategory="100"
+        android:title="Home Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings5"
+        android:orderInCategory="100"
+        android:title="Add Savings"
+        app:showAsAction="never" />
+</menu>

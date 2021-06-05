@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93951852389",
+    "firebase_url": "https://safta-food-6c65a.firebaseio.com",
+    "project_id": "safta-food-6c65a",
+    "storage_bucket": "safta-food-6c65a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93951852389:android:74728d40a26ec2ada4ab8c",
+        "android_client_info": {
+          "package_name": "www.scientistx.saftafood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93951852389-qo605k9poqsddvnjs7degflf3nmtfos6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.scientistx.saftafood",
+            "certificate_hash": "79853bfe9991ed4535f6f10a9dcdaba487e76c95"
+          }
+        },
+        {
+          "client_id": "93951852389-ll81ifsk7dq6l82p2pmfkg3en0urun9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPvv-MBMzBjbfTbNdzpn76rBqg2nAKE8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93951852389-ll81ifsk7dq6l82p2pmfkg3en0urun9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

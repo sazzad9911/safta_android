@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homebody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#9C9C9C"
+        android:clipChildren="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="310dp"
+            android:background="#E4C97B"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Home rent"
+                android:inputType="number"
+                android:textColor="#070707"
+                android:textColorHint="#0427E0" />
+
+            <EditText
+                android:id="@+id/gass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Gass Bill"
+                android:inputType="number"
+                android:textColor="#030303"
+                android:textColorHint="#0624C5" />
+
+            <EditText
+                android:id="@+id/cooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cooking Bill"
+                android:inputType="number"
+                android:textColor="#010207"
+                android:textColorHint="#0623C5" />
+
+            <EditText
+                android:id="@+id/wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Wifi Bill"
+                android:inputType="number"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#041FB6" />
+
+            <EditText
+                android:id="@+id/elec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Electricity Bill"
+                android:inputType="number"
+                android:textColor="#080809"
+                android:textColorHint="#0320C2" />
+
+            <Spinner
+                android:id="@+id/holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#060607"
+                android:text="Save"
+                android:textColor="#F9F9FC" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:background="#050505"
+            android:text="Hand Cash"
+            android:textAlignment="center"
+            android:textColor="#F6F6F8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/homehandcash"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#F8F6F8"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:background="#4C05C9"
+            android:text="Total Spend"
+            android:textAlignment="center"
+            android:textColor="#FCFCFD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homehandcash" />
+
+        <TextView
+            android:id="@+id/spend"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#4B08C2"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FCFCFD"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/addfine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Add Fine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spend" />
+
+        <Button
+            android:id="@+id/addextra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Add extra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addfine" />
+
+        <Button
+            android:id="@+id/addcreditss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#FF5722"
+            android:text="Add credit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spend" />
+
+        <Button
+            android:id="@+id/addcostsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFEB3B"
+            android:text="Add Costs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addcreditss" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

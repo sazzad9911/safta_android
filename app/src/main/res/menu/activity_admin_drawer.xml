@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home1"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/Profile11"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Profile" />
+        <item
+            android:id="@+id/Event11"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="Event" />
+        <item
+            android:id="@+id/nav_tools1"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="About Us" />
+        <item
+            android:id="@+id/logoutt"
+            android:icon="@android:drawable/ic_partial_secure"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share1"
+                android:icon="@android:drawable/ic_menu_today"
+                android:title="Add Meal" />
+            <item
+                android:id="@+id/nav_send1"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Add Bills" />
+            <item
+                android:id="@+id/mess1"
+                android:icon="@drawable/ic_stat_2"
+                android:title="Message" />
+        </menu>
+    </item>
+
+</menu>

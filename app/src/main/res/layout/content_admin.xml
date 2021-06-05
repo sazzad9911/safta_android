@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".admin"
+    tools:showIn="@layout/app_bar_admin">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dashboard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#B9DFDB"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/MealDue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:background="#E91E63"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Meal Due"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toStartOf="@+id/HomeDue1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/HomeDue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="#E91E63"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Home Due"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MealDue1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mealdue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="1dp"
+            android:background="#E91E63"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/homedue1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MealDue1" />
+
+        <TextView
+            android:id="@+id/homedue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="#E91E63"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mealdue1"
+            app:layout_constraintTop_toBottomOf="@+id/HomeDue1" />
+
+        <TextView
+            android:id="@+id/MealCredit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="#4CAF50"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Meal Credit"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toStartOf="@+id/HomeCredit1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealdue1" />
+
+        <TextView
+            android:id="@+id/HomeCredit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="#4CAF50"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Home Credit"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MealCredit1"
+            app:layout_constraintTop_toBottomOf="@+id/homedue1" />
+
+        <TextView
+            android:id="@+id/mealcredit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="1dp"
+            android:background="#4CAF50"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/homecredit1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MealCredit1" />
+
+        <TextView
+            android:id="@+id/homecredit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="#4CAF50"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="00"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mealcredit1"
+            app:layout_constraintTop_toBottomOf="@+id/HomeCredit1" />
+
+        <TextView
+            android:id="@+id/MealRate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="#673AB7"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Meal Rate"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toStartOf="@+id/TotalMeal1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealcredit1" />
+
+        <TextView
+            android:id="@+id/TotalMeal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="#3F51B5"
+            android:minWidth="180dp"
+            android:minHeight="20dp"
+            android:text="Total Meal"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MealRate1"
+            app:layout_constraintTop_toBottomOf="@+id/homecredit1" />
+
+        <TextView
+            android:id="@+id/mealrate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="1dp"
+            android:background="#673AB7"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/totalmeal1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MealRate1" />
+
+        <TextView
+            android:id="@+id/totalmeal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:background="#3F51B5"
+            android:minWidth="180dp"
+            android:minHeight="50dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mealrate1"
+            app:layout_constraintTop_toBottomOf="@+id/TotalMeal1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FAE9CA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealrate1">
+
+            <TextView
+                android:id="@+id/textView160"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Rents Are"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Home Rent"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView160" />
+
+            <TextView
+                android:id="@+id/gass1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Gass Bill"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home1" />
+
+            <TextView
+                android:id="@+id/cooking1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Cooking Bill"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gass1" />
+
+            <TextView
+                android:id="@+id/wifi1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Wifi Bill"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cooking1" />
+
+            <TextView
+                android:id="@+id/electricity1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Electricity Bill"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wifi1" />
+
+            <TextView
+                android:id="@+id/previous1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Previous Due"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/electricity1" />
+
+            <TextView
+                android:id="@+id/pmealdue1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Previous Meal Due"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/previous1" />
+
+            <TextView
+                android:id="@+id/fine1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Fine Fee"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pmealdue1" />
+
+            <TextView
+                android:id="@+id/extra1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="serif-monospace"
+                android:text="Extra Fee"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fine1" />
+
+            <TextView
+                android:id="@+id/month1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:fontFamily="monospace"
+                android:text="For the month: Julay 2020"
+                android:textAlignment="center"
+                android:textColor="#AD0202"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/extra1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profilee1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#B9DFDB"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Md. Sazzad Hossain"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/position1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="Managing Director, SIIT Section"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:text="Degree:"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="Date of Birth"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degree1" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="Phone: "
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datee1" />
+
+        <TextView
+            android:id="@+id/degree1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="BSc in CSE ,Daffodil International University"
+            android:textColor="#000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/datee1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="19 dec 1997"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/phonee1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="01761143991"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <ImageButton
+            android:id="@+id/editName1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="1dp"
+            android:onClick="EditName"
+            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintTop_toBottomOf="@+id/position1"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/editImg1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:onClick="ImageClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            app:srcCompat="@android:drawable/ic_menu_upload" />
+
+        <ImageButton
+            android:id="@+id/editInfo1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:onClick="EditInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phonee1"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/table1"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FAFCF7"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/closerrrr1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/btn_dialog" />
+
+            <EditText
+                android:id="@+id/editfield11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="14dp"
+                android:ems="10"
+                android:hint="settt"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/editfield21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editfield21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:ems="10"
+                android:hint="sett"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editfield31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="37dp"
+                android:ems="10"
+                android:hint="date"
+                android:inputType="text"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editfield21" />
+
+            <Button
+                android:id="@+id/save1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="113dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="34dp"
+                android:text="Save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editfield31"
+                app:layout_constraintTop_toBottomOf="@+id/closerrrr1" />
+
+            <Button
+                android:id="@+id/SaveInfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="31dp"
+                android:background="#F1A8C3"
+                android:text="Save"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/save1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editfield31"
+                app:layout_constraintTop_toBottomOf="@+id/closerrrr1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eventt1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#B9DFDB"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:background="#D1BDF5"
+            android:text="New Event"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/headline1"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:text="Name of the Event such as honorobal to decelear"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:text="Write here the main content block. You have to write the event prize money, cause of event, event date and event vanue and who can present. You have to declear the button of Bye ticket for the event. Every member of meal system can bye one or more ticket for events"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headline1" />
+
+        <Button
+            android:id="@+id/buy1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#3F51B5"
+            android:text="Buy Ticket"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="1dp"
+            android:background="#C4AEE7"
+            android:text="Old Events"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buy1" />
+
+        <WebView
+            android:id="@+id/webevent1"
+            android:layout_width="392dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideOverlay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_main1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="300dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#ACACAD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment1"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#7CF081"
+        android:fadeScrollbars="true"
+        android:isScrollContainer="true"
+        android:overScrollMode="ifContentScrolls"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="close"
+            android:src="@android:drawable/btn_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Txt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:isScrollContainer="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="vertical"
+            android:textColor="#B10841"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
